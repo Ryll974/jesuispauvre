@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
           gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [Colors.black, Colors.grey])),
+              colors: [Colors.black, Colors.grey.shade300])),
       child: Scaffold(
           // By defaut, Scaffold background is white
           // Set its value to transparent
