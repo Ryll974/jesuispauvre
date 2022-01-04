@@ -26,13 +26,20 @@ class HomePage extends StatelessWidget {
               end: Alignment.bottomCenter,
               colors: [Colors.black, Colors.grey])),
       child: Scaffold(
-        // By defaut, Scaffold background is white
-        // Set its value to transparent
+          // By defaut, Scaffold background is white
+          // Set its value to transparent
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             centerTitle: true,
             backgroundColor: Colors.black,
-            title: Text('Je suis pauvre ...', style: TextStyle(color: Colors.grey,fontSize: 30.0, fontWeight: FontWeight.bold,),),
+            title: Text(
+              'Je suis pauvre ...',
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
           body: Center(
             child: Image(
