@@ -1,24 +1,44 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.grey,
-        appBar: AppBar(
-          centerTitle: true,
-          title: Text(
-            "Je suis pauvre ...",
-            style: TextStyle(color: Colors.grey,fontSize: 30.0, fontWeight: FontWeight.bold,),
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      // Remove the debug banner
+      debugShowCheckedModeBanner: false,
+      title: 'Je suis pauvre',
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Colors.black, Colors.grey])),
+      child: Scaffold(
+        // By defaut, Scaffold background is white
+        // Set its value to transparent
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            centerTitle: true,
+            backgroundColor: Colors.black,
+            title: Text('Je suis pauvre ...', style: TextStyle(color: Colors.grey,fontSize: 30.0, fontWeight: FontWeight.bold,),),
           ),
-          backgroundColor: Colors.black,
-        ),
-        body: Center(
-          child: Image(
-            image: AssetImage("images/guypoor.png"),
-          ),
-        ),
-      ),
-    ),
-  );
+          body: Center(
+            child: Image(
+              image: AssetImage("images/guypoor.png"),
+            ),
+          )),
+    );
+  }
 }
