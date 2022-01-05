@@ -1,16 +1,27 @@
 # jesuispauvre
 
-A new Flutter project.
+2eme projet Flutter
 
-## Getting Started
+Description :
+-------------
 
-This project is a starting point for a Flutter application.
+simple application qui comprend :
 
-A few resources to get you started if this is your first Flutter project:
+- une barre d'appli qui affiche un titre centré en gras
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- un body qui affiche une image (un gars pauvre)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features :
+----------
+
+une des différence majeure avec la première version (Je suis riche) est le dégradé sur l'image de fond (background)
+
+il faut définir un widget container qui va tout contenir et qui aura les paramètres du dégradé intégré
+
+le scafold (qui sera donc un child de ce container) devra donc avoir un background transparent pour que cela fonctionne
+
+05/01/2022
+
+Patrick J
+
+
